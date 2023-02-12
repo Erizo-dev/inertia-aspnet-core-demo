@@ -1,0 +1,22 @@
+.vscode
+.vs
+bin
+obj
+*.db
+Host/wwwroot/client/assets/**/*
+
+InertiaCore
+node_modules
+
+# Editor directories and files
+.vscode/*
+.vs/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+

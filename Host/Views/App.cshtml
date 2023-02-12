@@ -1,0 +1,25 @@
+@using InertiaCore
+@using System.Text.Json
+    @* @if(Model is not null) {
+    } *@
+
+
+@section InertiaHead {
+        @await Inertia.Head(Model)
+}
+@section Styles {
+
+<link  asp-href-include="/Client/assets/main-*.css" rel="stylesheet" >
+}
+<pre>
+    @(JsonSerializer.Serialize(Model))
+</pre>
+@section Body {
+    @await Inertia.Html(Model)
+}
+
+@section Scripts {
+    <script asp-src-include="/Client/assets/main-*.js"></script>
+
+}
+    
